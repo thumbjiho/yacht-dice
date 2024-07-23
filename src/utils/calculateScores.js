@@ -3,12 +3,12 @@ const calculateScores = (diceValues) => {
     diceValues.filter((dice) => dice === value).length;
 
   const scores = {
-    ones: countOccurrences(1) * 1,
-    twos: countOccurrences(2) * 2,
-    threes: countOccurrences(3) * 3,
-    fours: countOccurrences(4) * 4,
-    fives: countOccurrences(5) * 5,
-    sixes: countOccurrences(6) * 6,
+    Aces: countOccurrences(1) * 1,
+    Deuces: countOccurrences(2) * 2,
+    Threes: countOccurrences(3) * 3,
+    Fours: countOccurrences(4) * 4,
+    Fives: countOccurrences(5) * 5,
+    Sixes: countOccurrences(6) * 6,
     choice: diceValues.reduce((sum, value) => sum + value, 0),
     fourOfAKind: 0,
     fullHouse: 0,

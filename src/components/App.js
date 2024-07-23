@@ -112,7 +112,7 @@ const App = () => {
   const subtotal = (player) =>
     Object.keys(fixedScores[player])
       .filter((key) =>
-        ["ones", "twos", "threes", "fours", "fives", "sixes"].includes(key)
+        ["Aces", "Deuces", "Threes", "Fours", "Fives", "Sixes"].includes(key)
       )
       .reduce((acc, key) => acc + fixedScores[player][key], 0);
 

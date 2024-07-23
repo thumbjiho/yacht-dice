@@ -42,7 +42,7 @@ const ScoreTable = ({
             </tr>
           </thead>
           <tbody>
-            {["ones", "twos", "threes", "fours", "fives", "sixes"].map(
+            {["Aces", "Deuces", "Threes", "Fours", "Fives", "Sixes"].map(
               (category) => (
                 <tr key={category}>
                   <td>{formatCategory(category)}</td>
@@ -85,13 +85,13 @@ const ScoreTable = ({
             )}
             <tr className="subtotal-row">
               <td>Subtotal</td>
-              <td>{subtotal("player1")}</td>
-              <td>{subtotal("player2")}</td>
+              <td>{subtotal("player1")} / 63</td>
+              <td>{subtotal("player2")} / 63</td>
             </tr>
             <tr className="bonus-row">
               <td>Bonus</td>
-              <td>{bonus("player1")}</td>
-              <td>{bonus("player2")}</td>
+              <td>+ {bonus("player1")}</td>
+              <td>+ {bonus("player2")}</td>
             </tr>
           </tbody>
         </table>
