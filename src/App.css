@@ -64,7 +64,7 @@ body {
 }
 
 .button-container {
-  margin: 20px;
+  margin: 4px;
 }
 
 /* 현재 차례인 플레이어 열 하이라이트 */
@@ -74,8 +74,9 @@ body {
 
 button {
   margin: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 16px 32px;
+  font-size: 20px;
+  font-weight: 800;
   cursor: pointer;
   border: none;
   border-radius: 5px;
