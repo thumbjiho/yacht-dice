@@ -137,7 +137,6 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Welcome to Jojo's Yacht Dice</h1>
 
       {round > 12 ? (
         <>
@@ -158,7 +157,7 @@ const App = () => {
         </>
       ) : (
         <>
-          <h3>Round: {round}</h3>
+          <h3>Jojo's Yacht Dice, Round: {round}</h3>
           <ScoreTable
             currentPlayer={currentPlayer}
             scores={scores}
@@ -180,7 +179,6 @@ const App = () => {
               />
             ))}
           </div>
-
           <div className="button-container">
             <div className="roll-container">
               <h3>Rolls Left: {3 - rollCount}</h3>
@@ -195,7 +193,7 @@ const App = () => {
                 Roll The Dice
               </button>
             </div>
-            <button className="restart-button" onClick={handleResetClick}>
+            {/* <button className="restart-button" onClick={handleResetClick}>
               Restart
             </button>
             <button
@@ -203,7 +201,7 @@ const App = () => {
               onClick={() => setShowManualControls(!showManualControls)}
             >
               Manual Controls
-            </button>
+            </button> */}
           </div>
         </>
       )}

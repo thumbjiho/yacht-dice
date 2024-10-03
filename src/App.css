@@ -95,6 +95,11 @@ button:disabled {
 .score-table {
   margin: 8px auto;
   border-collapse: collapse;
+  height: 12px;
+}
+
+.category-row {
+  height: 12px; /* Set the height specifically for category rows */
 }
 
 .score-table th {
@@ -118,6 +123,7 @@ button:disabled {
   width: 64px;
   font-size: 16px;
   cursor: pointer;
+  height: 32px;
 }
 
 .score-table td:nth-child(2):hover,
@@ -137,6 +143,7 @@ button:disabled {
   background-color: hsl(120, 2%, 25%);
   cursor: default;
   pointer-events: none;
+  height: 12px;
 }
 
 .score-table td.fixed {
@@ -164,11 +171,9 @@ button:disabled {
   background-color: #bbb;
   cursor: default;
   pointer-events: none;
+  height: 12px;
 }
 
-.score-table th {
-  padding: 8px; /* 원하는 패딩 값으로 수정 */
-}
 
 .restart-button {
   background-color: red;

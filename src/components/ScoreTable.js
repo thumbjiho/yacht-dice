@@ -31,7 +31,7 @@ const ScoreTable = ({
       <div className="table-section">
         <table className="score-table">
           <thead>
-            <tr>
+            <tr className="category-row">
               <th>Category</th>
               <th className={currentPlayer === "player1" ? "highlight" : ""}>
                 Player 1
