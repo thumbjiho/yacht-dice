@@ -19,7 +19,7 @@ const App = () => {
   ]);
   const [fixedScores, setFixedScores] = useState({ player1: {}, player2: {} });
   const [isRolling, setIsRolling] = useState(false);
-  const [showManualControls, setShowManualControls] = useState(false);
+  // const [showManualControls, setShowManualControls] = useState(false);
 
   const switchTurn = () => {
     setCurrentPlayer((prevPlayer) =>
@@ -175,7 +175,7 @@ const App = () => {
                 onClick={() => handleDiceClick(index)}
                 locked={lockedDice[index]}
                 onLockClick={() => handleLockClick(index)}
-                showManualControls={showManualControls}
+                // showManualControls={showManualControls}
               />
             ))}
           </div>
